@@ -1,0 +1,68 @@
+.RayContainer {
+  --ray-gradient: radial-gradient(rgba(177, 112, 255, 0.85) 0%, rgba(43, 166, 255, 0) 100%);
+  transition: opacity 0.25s linear;
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  z-index: 99;
+
+  .LightRay {
+    position: absolute;
+    border-radius: 100%;
+    background: var(--ray-gradient);
+  }
+
+  .RayOne {
+    width: 480px;
+    height: 680px;
+    transform: rotate(80deg);
+    top: -540px;
+    left: 150px;
+    filter: blur(110px);
+  }
+
+  .RayTwo {
+    width: 110px;
+    height: 400px;
+    transform: rotate(-20deg);
+    top: -280px;
+    left: 250px;
+    mix-blend-mode: overlay;
+    opacity: 0.6;
+    filter: blur(60px);
+  }
+
+  .RayThree {
+    width: 400px;
+    height: 370px;
+    top: -350px;
+    left: 300px;
+    mix-blend-mode: overlay;
+    opacity: 0.6;
+    filter: blur(21px);
+  }
+
+  .RayFour {
+    position: absolute;
+    width: 330px;
+    height: 370px;
+    top: -330px;
+    left: 50px;
+    mix-blend-mode: overlay;
+    opacity: 0.5;
+    filter: blur(21px);
+  }
+
+  .RayFive {
+    position: absolute;
+    width: 110px;
+    height: 400px;
+    transform: rotate(-40deg);
+    top: -280px;
+    left: -10px;
+    mix-blend-mode: overlay;
+    opacity: 0.8;
+    filter: blur(60px);
+  }
+}
